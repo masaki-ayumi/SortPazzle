@@ -34,12 +34,12 @@ public class ObjectCreate : MonoBehaviour
     //お団子のオブジェクト生成用関数
     public void CreateDANGOObject()
     {
-        //スクリプトをアタッチしたオブジェクトを親オブジェクトにする
-        //Transform parent = this.transform;
-
+        //親オブジェクト配列
         Transform[] parent = new Transform[4];
+
         for (int i = 0; i < dangoPosition.Length; i++)
         {
+            //団子用の座標オブジェクトを親オブジェクトにする
             parent[i] = dangoPosition[i].transform;
 
             //団子Prefabをインスタンス化
