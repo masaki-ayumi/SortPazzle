@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3408837314583850174}
   - component: {fileID: 3408837314583850175}
   m_Layer: 0
-  m_Name: "\u767D\u56E3\u5B50"
+  m_Name: SIRATAMA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

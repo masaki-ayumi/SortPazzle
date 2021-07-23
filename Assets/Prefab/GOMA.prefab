@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8787672624736444883}
   - component: {fileID: 8787672624736444876}
   m_Layer: 0
-  m_Name: "\u3054\u307E\u56E3\u5B50"
+  m_Name: GOMA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3267882107152291788}
   - component: {fileID: 3267882107152291787}
   m_Layer: 0
-  m_Name: "\u3042\u3093\u3053\u56E3\u5B50"
+  m_Name: ANKO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

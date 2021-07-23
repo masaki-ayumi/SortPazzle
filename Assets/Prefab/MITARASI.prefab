@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6766065090086539862}
   - component: {fileID: 6766065090086539857}
   m_Layer: 0
-  m_Name: "\u307F\u305F\u3089\u3057\u56E3\u5B50"
+  m_Name: MITARASI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

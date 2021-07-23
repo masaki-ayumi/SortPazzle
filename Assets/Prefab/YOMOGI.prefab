@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2345203994780578152}
   - component: {fileID: 2345203994780578155}
   m_Layer: 0
-  m_Name: "\u30E8\u30E2\u30AE\u56E3\u5B50"
+  m_Name: YOMOGI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
