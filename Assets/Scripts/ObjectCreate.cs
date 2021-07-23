@@ -46,4 +46,6 @@ public class ObjectCreate : MonoBehaviour
             GameObject dangoObject = Instantiate(dangoPrefab[Random.Range(0, 5)], parent[i].transform.position, Quaternion.identity, parent[i]);
         }
     }
+
+    
 }
