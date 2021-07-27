@@ -306,7 +306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 490613367}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: DANGOPosition(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -436,7 +436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 550184268}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: DANGOPosition(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,7 +466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 909260051}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: DANGOPosition(3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,7 +577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 991254968}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: DANGOPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -607,7 +607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1190075862}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: DANGOPosition(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -637,7 +637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1205853606}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: DANGOPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -667,7 +667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1283126126}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: DANGOPosition(3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -730,7 +730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1765231142}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: DANGOPosition(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
