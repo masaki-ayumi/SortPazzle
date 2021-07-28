@@ -20,7 +20,7 @@ public class TapController : MonoBehaviour
     public void TapObject()
     {
         //Debug.Log("触った");
-        parent = transform.Find("DANGOPosition").gameObject;
+        //parent = transform.Find("DANGOPosition").gameObject;
         GameObject child = parent.transform.GetChild(0).gameObject;
         Debug.Log(child);
         
