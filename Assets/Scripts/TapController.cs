@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TapController : MonoBehaviour
 {
-    public GameObject parent;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +19,15 @@ public class TapController : MonoBehaviour
     public void TapObject()
     {
         //Debug.Log("触った");
-        //parent = transform.Find("DANGOPosition").gameObject;
+        //スクリプトをアタッチしたオブジェクトを親オブジェクトとする
+        GameObject parent = this.gameObject;
+
+        //親オブジェクトの一つ下の子オブジェクトを取得
         GameObject child = parent.transform.GetChild(0).gameObject;
-        Debug.Log(child);
-        
+
+        Debug.Log(child);        
+
+        GameObject mago = child.transform.GetChild(0).gameObject;
+        Debug.Log(mago);
     }
 }
