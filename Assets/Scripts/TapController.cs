@@ -15,11 +15,11 @@ public class TapController : MonoBehaviour
     void Update()
     {
         //関数が動いたら別の関数を動かす
-        if (isTouch == true)
-        {
-            Debug.Log("別の関数");
-        }
-        isTouch = false;
+        //if (isTouch == true)
+        //{
+        //    Touch();
+        //}
+        //isTouch = false;
     }
 
     public void TapObject()
@@ -35,5 +35,16 @@ public class TapController : MonoBehaviour
         //子オブジェクトから孫オブジェクトを取得
         GameObject mago = child.transform.GetChild(0).gameObject;
         Debug.Log(mago);
+
+        if(isTouch==false)
+        {
+            return;
+        }
+        Debug.Log("別の関数");
+    }
+
+    public void Touch()
+    {
+        Debug.Log("別の関数");
     }
 }
