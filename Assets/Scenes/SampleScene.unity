@@ -199,6 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTouch: 0
+  count: 0
 --- !u!114 &214449308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +228,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1603374687}
+        - m_Target: {fileID: 1603374689}
           m_MethodName: Move
           m_Mode: 1
           m_Arguments:
@@ -355,6 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTouch: 0
+  count: 0
 --- !u!61 &430087046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -409,7 +411,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1603374687}
+        - m_Target: {fileID: 1603374689}
           m_MethodName: Move
           m_Mode: 1
           m_Arguments:
@@ -507,6 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTouch: 0
+  count: 0
 --- !u!114 &459813526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,7 +538,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1603374687}
+        - m_Target: {fileID: 1603374689}
           m_MethodName: Move
           m_Mode: 1
           m_Arguments:
@@ -1067,6 +1070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTouch: 0
+  count: 0
 --- !u!1 &1614398421
 GameObject:
   m_ObjectHideFlags: 0
