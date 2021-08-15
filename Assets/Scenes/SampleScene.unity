@@ -932,7 +932,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1603374688}
   - component: {fileID: 1603374689}
-  - component: {fileID: 1603374687}
   m_Layer: 0
   m_Name: KUSI
   m_TagString: Untagged
@@ -940,19 +939,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1603374687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603374686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b865d7b8ba43cbf448bad19244f582ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTouch: 0
 --- !u!4 &1603374688
 Transform:
   m_ObjectHideFlags: 0
