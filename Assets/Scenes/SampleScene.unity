@@ -133,8 +133,6 @@ GameObject:
   - component: {fileID: 214449306}
   - component: {fileID: 214449309}
   - component: {fileID: 214449308}
-  - component: {fileID: 214449307}
-  - component: {fileID: 214449310}
   m_Layer: 0
   m_Name: KUSIObject (1)
   m_TagString: Untagged
@@ -186,20 +184,6 @@ MonoBehaviour:
   - {fileID: 490613366}
   - {fileID: 1190075861}
   - {fileID: 1283126125}
---- !u!114 &214449307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214449304}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 434ae77e3dbd0ec42b52c75d2abf1004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTouch: 0
-  count: 0
 --- !u!114 &214449308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,19 +249,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 4.2730455}
   m_EdgeRadius: 0
---- !u!114 &214449310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214449304}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b865d7b8ba43cbf448bad19244f582ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTouch: 0
 --- !u!1 &430087042
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,8 +261,6 @@ GameObject:
   - component: {fileID: 430087043}
   - component: {fileID: 430087047}
   - component: {fileID: 430087046}
-  - component: {fileID: 430087045}
-  - component: {fileID: 430087048}
   m_Layer: 0
   m_Name: KUSIObject
   m_TagString: Untagged
@@ -343,20 +312,6 @@ Transform:
   m_Father: {fileID: 1603374688}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &430087045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 430087042}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 434ae77e3dbd0ec42b52c75d2abf1004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTouch: 0
-  count: 0
 --- !u!61 &430087046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -422,19 +377,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &430087048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 430087042}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b865d7b8ba43cbf448bad19244f582ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTouch: 0
 --- !u!1 &459813522
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,8 +389,6 @@ GameObject:
   - component: {fileID: 459813524}
   - component: {fileID: 459813527}
   - component: {fileID: 459813526}
-  - component: {fileID: 459813525}
-  - component: {fileID: 459813528}
   m_Layer: 0
   m_Name: KUSIObject (2)
   m_TagString: Untagged
@@ -496,20 +436,6 @@ MonoBehaviour:
   - {fileID: 3408837314583850168, guid: 8b28f718450806942bf3eb52c0d99f34, type: 3}
   - {fileID: 2345203994780578154, guid: 0767961bf360f664680008da216c6fb1, type: 3}
   dangoPosition: []
---- !u!114 &459813525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459813522}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 434ae77e3dbd0ec42b52c75d2abf1004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTouch: 0
-  count: 0
 --- !u!114 &459813526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,19 +501,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 4.3444576}
   m_EdgeRadius: 0
---- !u!114 &459813528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459813522}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b865d7b8ba43cbf448bad19244f582ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTouch: 0
 --- !u!1 &490613366
 GameObject:
   m_ObjectHideFlags: 0
