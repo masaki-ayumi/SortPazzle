@@ -4,52 +4,46 @@ using UnityEngine;
 
 public class TapController : MonoBehaviour
 {
-    public bool isTouch;        //オブジェクトを触ったか判定するフラグ
 
-    private GameObject tempObject;
+    private GameObject tempObject1;
 
     public float count;
 
     // Start is called before the first frame update
     void Start()
     {
-        isTouch = false;
         count = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(count);
-
-        if(count>=3)
+        //1と2を繰り返す
+        if (count >= 3)
         {
             count = 0;
         }
-        //関数が動いたら別の関数を動かす
-        //if (isTouch == true)
-        //{
-        //
-        //    Debug.Log(tempObject);
-        //    //isTouch = false;
-        //}
+       
+
+        //TODO：一回目の🍡と二回目の🍡を入れ替える
+        //TODO：親オブジェクトを入れ替え
+        //TODO：座標を入れ替え
+
     }
 
     public void TapObject()
     {
+
         count += 1;
 
-        if (count!=1)
+        if (count != 1)
         {
             return;
         }
-        //TODO：カウント変数を用意して奇数と偶数で関数を切り替える
-        //isTouch = true;
 
         GameObject parent = null;
 
         GameObject tapGameobject;
-        //マウスでタッチしたオブジェクトを親オブジェクトとする
         if (Input.GetMouseButtonDown(0))
         {
             tapGameobject = null;
@@ -58,13 +52,12 @@ public class TapController : MonoBehaviour
 
             if (hit2D)
             {
+                //マウスでタッチしたオブジェクトを親オブジェクトとする
                 tapGameobject = hit2D.transform.gameObject;
                 parent = tapGameobject;
             }
         }
 
-        //スクリプトをアタッチしたオブジェクトを親オブジェクトとする
-        //GameObject parent = this.gameObject;
 
         //親オブジェクトの一つ下の子オブジェクトを取得
         GameObject child = parent.transform.GetChild(0).gameObject;
@@ -74,20 +67,19 @@ public class TapController : MonoBehaviour
         GameObject mago = child.transform.GetChild(0).gameObject;
         Debug.Log(mago);
 
-        tempObject = mago;
+        tempObject1 = mago;
 
 
     }
 
     public void Move()
     {
-        if (count!=2)
+        if (count != 2)
         {
             return;
         }
         count += 1;
 
-        //isTouch = false;
 
 
         GameObject parent = null;
@@ -106,9 +98,6 @@ public class TapController : MonoBehaviour
                 parent = tapGameobject;
             }
         }
-
-        //スクリプトをアタッチしたオブジェクトを親オブジェクトとする
-        //GameObject parent = this.gameObject;
 
         //親オブジェクトの一つ下の子オブジェクトを取得
         GameObject child = parent.transform.GetChild(0).gameObject;
