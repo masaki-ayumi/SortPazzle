@@ -6,6 +6,7 @@ public class TapController : MonoBehaviour
 {
 
     private GameObject tempObject1;
+    private GameObject tempObject2;
 
     public float count;
 
@@ -23,9 +24,10 @@ public class TapController : MonoBehaviour
         {
             count = 0;
         }
-       
+
 
         //TODO：一回目の🍡と二回目の🍡を入れ替える
+        GameObject temp;
         //TODO：親オブジェクトを入れ替え
         //TODO：座標を入れ替え
 
@@ -65,9 +67,9 @@ public class TapController : MonoBehaviour
         //Debug.Log(child);        
         //子オブジェクトから孫オブジェクトを取得
         GameObject mago = child.transform.GetChild(0).gameObject;
-        Debug.Log(mago);
-
         tempObject1 = mago;
+
+        Debug.Log(tempObject1);
 
 
     }
@@ -105,8 +107,9 @@ public class TapController : MonoBehaviour
         //Debug.Log(child);        
         //子オブジェクトから孫オブジェクトを取得
         GameObject mago = child.transform.GetChild(0).gameObject;
-        Debug.Log(mago);
-        Debug.Log("一回目に選んだ団子とここで選んだ団子の座標を入れ替える");
+
+        tempObject2 = mago;
+        Debug.Log(tempObject2);
     }
 
 
