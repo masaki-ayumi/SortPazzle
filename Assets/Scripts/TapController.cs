@@ -27,9 +27,23 @@ public class TapController : MonoBehaviour
 
 
         //TODO：一回目の🍡と二回目の🍡を入れ替える
-        GameObject temp;
         //TODO：親オブジェクトを入れ替え
         //TODO：座標を入れ替え
+        GameObject temp;
+
+        //オブジェクトの中身があったら入れ替え実行
+        if (tempObject1 != null && tempObject2 != null)
+        {
+            
+            //入れ替え部分
+            temp = tempObject1;
+            tempObject1 = tempObject2;
+            tempObject2 = temp;
+
+            Debug.Log("temp1=" + tempObject1);
+            Debug.Log("temp2=" + tempObject2);
+        }
+
 
     }
 
