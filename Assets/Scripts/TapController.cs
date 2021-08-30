@@ -29,19 +29,33 @@ public class TapController : MonoBehaviour
         //TODO：一回目の🍡と二回目の🍡を入れ替える
         //TODO：親オブジェクトを入れ替え
         //TODO：座標を入れ替え
-        GameObject temp;
 
         //オブジェクトの中身があったら入れ替え実行
         if (tempObject1 != null && tempObject2 != null)
         {
-            
-            //入れ替え部分
-            temp = tempObject1;
-            tempObject1 = tempObject2;
-            tempObject2 = temp;
+
+            Transform temp;
+            Vector3 Vtemp;
+            //親オブジェクト入れ替え部分
+            temp = tempObject1.transform.parent;
+            Vtemp = tempObject1.transform.position;
+
+            tempObject1.transform.parent = tempObject2.transform.parent;
+            tempObject1.transform.position = tempObject2.transform.position;
+
+            tempObject2.transform.parent = temp;
+            tempObject2.transform.position = Vtemp;
+
+
+
 
             Debug.Log("temp1=" + tempObject1);
             Debug.Log("temp2=" + tempObject2);
+
+            //入れ替え用オブジェクトの中身をnull
+            temp = null;
+            tempObject1 = null;
+            tempObject2 = null;
         }
 
 
@@ -68,7 +82,7 @@ public class TapController : MonoBehaviour
 
             if (hit2D)
             {
-                //マウスでタッチしたオブジェクトを親オブジェクトとする
+                //マウスでタッチした串オブジェクトを親オブジェクトとする
                 tapGameobject = hit2D.transform.gameObject;
                 parent = tapGameobject;
             }
