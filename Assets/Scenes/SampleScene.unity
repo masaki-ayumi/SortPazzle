@@ -179,11 +179,12 @@ MonoBehaviour:
   - {fileID: 6766065090086539856, guid: aad666523c07012419bb05baa3e54b96, type: 3}
   - {fileID: 3408837314583850168, guid: 8b28f718450806942bf3eb52c0d99f34, type: 3}
   - {fileID: 2345203994780578154, guid: 0767961bf360f664680008da216c6fb1, type: 3}
+  - {fileID: 7970469273813830767, guid: 73008404e64d45d42bbca6143da6913e, type: 3}
   dangoPosition:
-  - {fileID: 1205853605}
-  - {fileID: 490613366}
-  - {fileID: 1190075861}
   - {fileID: 1283126125}
+  - {fileID: 1190075861}
+  - {fileID: 490613366}
+  - {fileID: 1205853605}
 --- !u!114 &214449308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,11 +290,12 @@ MonoBehaviour:
   - {fileID: 6766065090086539856, guid: aad666523c07012419bb05baa3e54b96, type: 3}
   - {fileID: 3408837314583850168, guid: 8b28f718450806942bf3eb52c0d99f34, type: 3}
   - {fileID: 2345203994780578154, guid: 0767961bf360f664680008da216c6fb1, type: 3}
+  - {fileID: 7970469273813830767, guid: 73008404e64d45d42bbca6143da6913e, type: 3}
   dangoPosition:
-  - {fileID: 991254967}
-  - {fileID: 550184267}
-  - {fileID: 1765231141}
   - {fileID: 909260050}
+  - {fileID: 1765231141}
+  - {fileID: 550184267}
+  - {fileID: 991254967}
 --- !u!4 &430087044
 Transform:
   m_ObjectHideFlags: 0
@@ -435,7 +437,12 @@ MonoBehaviour:
   - {fileID: 6766065090086539856, guid: aad666523c07012419bb05baa3e54b96, type: 3}
   - {fileID: 3408837314583850168, guid: 8b28f718450806942bf3eb52c0d99f34, type: 3}
   - {fileID: 2345203994780578154, guid: 0767961bf360f664680008da216c6fb1, type: 3}
-  dangoPosition: []
+  - {fileID: 7970469273813830767, guid: 73008404e64d45d42bbca6143da6913e, type: 3}
+  dangoPosition:
+  - {fileID: 2047484438}
+  - {fileID: 1833253143}
+  - {fileID: 1614398421}
+  - {fileID: 756524981}
 --- !u!114 &459813526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -968,7 +975,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 434ae77e3dbd0ec42b52c75d2abf1004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTouch: 0
   count: 0
 --- !u!1 &1614398421
 GameObject:
