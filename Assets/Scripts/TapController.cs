@@ -49,8 +49,8 @@ public class TapController : MonoBehaviour
 
 
 
-            Debug.Log("temp1=" + tempObject1);
-            Debug.Log("temp2=" + tempObject2);
+            //Debug.Log("temp1=" + tempObject1);
+            //Debug.Log("temp2=" + tempObject2);
 
             //入れ替え用オブジェクトの中身をnull
             temp = null;
@@ -97,7 +97,7 @@ public class TapController : MonoBehaviour
         GameObject mago = child.transform.GetChild(0).gameObject;
         tempObject1 = mago;
 
-        Debug.Log(tempObject1);
+        //Debug.Log(tempObject1);
 
 
     }
@@ -137,7 +137,7 @@ public class TapController : MonoBehaviour
         GameObject mago = child.transform.GetChild(0).gameObject;
 
         tempObject2 = mago;
-        Debug.Log(tempObject2);
+        //Debug.Log(tempObject2);
     }
 
 

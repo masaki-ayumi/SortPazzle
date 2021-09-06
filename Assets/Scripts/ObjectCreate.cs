@@ -43,7 +43,21 @@ public class ObjectCreate : MonoBehaviour
             parent[i] = dangoPosition[i].transform;
 
             //団子Prefabをインスタンス化
-            GameObject dangoObject = Instantiate(dangoPrefab[Random.Range(0, 7)], parent[i].transform.position, Quaternion.identity, parent[i]);
+            GameObject dangoObject = Instantiate(dangoPrefab[Random.Range(0, 3)], parent[i].transform.position, Quaternion.identity, parent[i]);
+
+
+            /*TODO:生成される団子prefabを制限する
+                   一種類につき四つまでに制限*/
+
+            //dangoPrefab[]とdangoObjectをつかって生成された団子をカウントする
+            //switch文を使う？
+
+            if (dangoObject == dangoPrefab[1])
+                Debug.Log("aaaaa"); //なぜか通らない
+
+
+            GameObject temp = dangoObject;
+            Debug.Log(dangoPrefab[1]);
         }
     }
 
