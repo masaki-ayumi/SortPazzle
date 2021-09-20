@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ANKO
+  - Empty
+  - GOMA
+  - KINAKO
+  - MITARASI
+  - SIRATAMA
+  - YOMOGI
   layers:
   - Default
   - TransparentFX
