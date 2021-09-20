@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6766065090086539857}
   m_Layer: 0
   m_Name: MITARASI
-  m_TagString: Untagged
+  m_TagString: MITARASI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
