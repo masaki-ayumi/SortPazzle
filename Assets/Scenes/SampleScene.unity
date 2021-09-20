@@ -130,7 +130,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 214449305}
-  - component: {fileID: 214449306}
   - component: {fileID: 214449309}
   - component: {fileID: 214449308}
   m_Layer: 0
@@ -158,33 +157,6 @@ Transform:
   m_Father: {fileID: 1603374688}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &214449306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214449304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0255e8d217a39314982d17fc576a53bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kusiPrefab: {fileID: 6109024674480145176, guid: 4595f97b348439a49b2a6bbb894b184e,
-    type: 3}
-  dangoPrefab:
-  - {fileID: 7970469273813830767, guid: 73008404e64d45d42bbca6143da6913e, type: 3}
-  - {fileID: 8787672624736444877, guid: 58673e57ba4a3c8458b001f257475073, type: 3}
-  - {fileID: 2808296345630244185, guid: 9a67ed2795d43e847bae64ed2c54078e, type: 3}
-  - {fileID: 6766065090086539856, guid: aad666523c07012419bb05baa3e54b96, type: 3}
-  - {fileID: 3408837314583850168, guid: 8b28f718450806942bf3eb52c0d99f34, type: 3}
-  - {fileID: 2345203994780578154, guid: 0767961bf360f664680008da216c6fb1, type: 3}
-  - {fileID: 3267882107152291786, guid: 046cbf8d86cf2ff40802c9fc3186815c, type: 3}
-  dangoPosition:
-  - {fileID: 1283126125}
-  - {fileID: 1190075861}
-  - {fileID: 490613366}
-  - {fileID: 1205853605}
 --- !u!114 &214449308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +231,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 430087044}
-  - component: {fileID: 430087043}
   - component: {fileID: 430087047}
   - component: {fileID: 430087046}
   m_Layer: 0
@@ -269,33 +240,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &430087043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 430087042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0255e8d217a39314982d17fc576a53bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kusiPrefab: {fileID: 6109024674480145176, guid: 4595f97b348439a49b2a6bbb894b184e,
-    type: 3}
-  dangoPrefab:
-  - {fileID: 7970469273813830767, guid: 73008404e64d45d42bbca6143da6913e, type: 3}
-  - {fileID: 8787672624736444877, guid: 58673e57ba4a3c8458b001f257475073, type: 3}
-  - {fileID: 2808296345630244185, guid: 9a67ed2795d43e847bae64ed2c54078e, type: 3}
-  - {fileID: 6766065090086539856, guid: aad666523c07012419bb05baa3e54b96, type: 3}
-  - {fileID: 3408837314583850168, guid: 8b28f718450806942bf3eb52c0d99f34, type: 3}
-  - {fileID: 2345203994780578154, guid: 0767961bf360f664680008da216c6fb1, type: 3}
-  - {fileID: 3267882107152291786, guid: 046cbf8d86cf2ff40802c9fc3186815c, type: 3}
-  dangoPosition:
-  - {fileID: 909260050}
-  - {fileID: 1765231141}
-  - {fileID: 550184267}
-  - {fileID: 991254967}
 --- !u!4 &430087044
 Transform:
   m_ObjectHideFlags: 0
@@ -388,7 +332,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 459813523}
-  - component: {fileID: 459813524}
   - component: {fileID: 459813527}
   - component: {fileID: 459813526}
   m_Layer: 0
@@ -416,33 +359,6 @@ Transform:
   m_Father: {fileID: 1603374688}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &459813524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459813522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0255e8d217a39314982d17fc576a53bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kusiPrefab: {fileID: 6109024674480145176, guid: 4595f97b348439a49b2a6bbb894b184e,
-    type: 3}
-  dangoPrefab:
-  - {fileID: 7970469273813830767, guid: 73008404e64d45d42bbca6143da6913e, type: 3}
-  - {fileID: 8787672624736444877, guid: 58673e57ba4a3c8458b001f257475073, type: 3}
-  - {fileID: 2808296345630244185, guid: 9a67ed2795d43e847bae64ed2c54078e, type: 3}
-  - {fileID: 6766065090086539856, guid: aad666523c07012419bb05baa3e54b96, type: 3}
-  - {fileID: 3408837314583850168, guid: 8b28f718450806942bf3eb52c0d99f34, type: 3}
-  - {fileID: 2345203994780578154, guid: 0767961bf360f664680008da216c6fb1, type: 3}
-  - {fileID: 3267882107152291786, guid: 046cbf8d86cf2ff40802c9fc3186815c, type: 3}
-  dangoPosition:
-  - {fileID: 2047484438}
-  - {fileID: 1833253143}
-  - {fileID: 1614398421}
-  - {fileID: 756524981}
 --- !u!114 &459813526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -939,6 +855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1603374688}
   - component: {fileID: 1603374689}
+  - component: {fileID: 1603374687}
   m_Layer: 0
   m_Name: KUSI
   m_TagString: Untagged
@@ -946,6 +863,45 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1603374687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603374686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0255e8d217a39314982d17fc576a53bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kusiPrefab: {fileID: 6109024674480145176, guid: 4595f97b348439a49b2a6bbb894b184e,
+    type: 3}
+  dangoPrefab:
+  - {fileID: 3267882107152291786, guid: 046cbf8d86cf2ff40802c9fc3186815c, type: 3}
+  - {fileID: 7970469273813830767, guid: 73008404e64d45d42bbca6143da6913e, type: 3}
+  - {fileID: 8787672624736444877, guid: 58673e57ba4a3c8458b001f257475073, type: 3}
+  - {fileID: 2808296345630244185, guid: 9a67ed2795d43e847bae64ed2c54078e, type: 3}
+  - {fileID: 6766065090086539856, guid: aad666523c07012419bb05baa3e54b96, type: 3}
+  - {fileID: 3408837314583850168, guid: 8b28f718450806942bf3eb52c0d99f34, type: 3}
+  - {fileID: 2345203994780578154, guid: 0767961bf360f664680008da216c6fb1, type: 3}
+  dangoPosition:
+  - {fileID: 909260050}
+  - {fileID: 1765231141}
+  - {fileID: 550184267}
+  - {fileID: 991254967}
+  - {fileID: 1283126125}
+  - {fileID: 1190075861}
+  - {fileID: 490613366}
+  - {fileID: 1205853605}
+  - {fileID: 2047484438}
+  - {fileID: 1833253143}
+  - {fileID: 1614398421}
+  - {fileID: 756524981}
+  KUSIPosition:
+  - {fileID: 430087042}
+  - {fileID: 214449304}
+  - {fileID: 459813522}
 --- !u!4 &1603374688
 Transform:
   m_ObjectHideFlags: 0
