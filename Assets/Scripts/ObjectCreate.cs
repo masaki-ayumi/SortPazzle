@@ -53,8 +53,11 @@ public class ObjectCreate : MonoBehaviour
             //団子用の座標オブジェクトを親オブジェクトにする
             parent[i] = dangoPosition[i].transform;
 
+            //団子Prefab配列の添え字用変数
+            int dangoRandom = Random.Range(0, 3);
+
             //団子Prefabをインスタンス化
-            GameObject dangoObject = Instantiate(dangoPrefab[Random.Range(0, 7)], parent[i].transform.position, Quaternion.identity, parent[i]);
+            GameObject dangoObject = Instantiate(dangoPrefab[dangoRandom], parent[i].transform.position, Quaternion.identity, parent[i]);
 
 
             /*TODO:生成される団子prefabを制限する
@@ -62,12 +65,20 @@ public class ObjectCreate : MonoBehaviour
 
             //tagをつかって生成された団子をカウントする
 
-            if (dangoObject.tag == "GOMA")
+            //if (dangoObject.tag == dangoPrefab[dangoRandom].tag)
+            //{
+            //    count++;
+            //    //Destroy(dangoObject);
+            //    //dangoObject = Instantiate(dangoPrefab[4], parent[i].transform.position, Quaternion.identity, parent[i]);
+            //}
+
+            //switch文でtagを使って各団子をカウント
+            switch (dangoObject.tag)
             {
-                count++;
-
+                case "ANKO":
+                    count++;
+                    break;
             }
-
 
             GameObject temp = dangoObject;
             Debug.Log(dangoObject);

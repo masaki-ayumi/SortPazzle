@@ -879,25 +879,25 @@ MonoBehaviour:
     type: 3}
   dangoPrefab:
   - {fileID: 3267882107152291786, guid: 046cbf8d86cf2ff40802c9fc3186815c, type: 3}
-  - {fileID: 7970469273813830767, guid: 73008404e64d45d42bbca6143da6913e, type: 3}
   - {fileID: 8787672624736444877, guid: 58673e57ba4a3c8458b001f257475073, type: 3}
   - {fileID: 2808296345630244185, guid: 9a67ed2795d43e847bae64ed2c54078e, type: 3}
   - {fileID: 6766065090086539856, guid: aad666523c07012419bb05baa3e54b96, type: 3}
   - {fileID: 3408837314583850168, guid: 8b28f718450806942bf3eb52c0d99f34, type: 3}
   - {fileID: 2345203994780578154, guid: 0767961bf360f664680008da216c6fb1, type: 3}
+  - {fileID: 7970469273813830767, guid: 73008404e64d45d42bbca6143da6913e, type: 3}
   dangoPosition:
-  - {fileID: 909260050}
-  - {fileID: 1765231141}
-  - {fileID: 550184267}
   - {fileID: 991254967}
-  - {fileID: 1283126125}
-  - {fileID: 1190075861}
-  - {fileID: 490613366}
   - {fileID: 1205853605}
-  - {fileID: 2047484438}
-  - {fileID: 1833253143}
-  - {fileID: 1614398421}
   - {fileID: 756524981}
+  - {fileID: 550184267}
+  - {fileID: 490613366}
+  - {fileID: 1614398421}
+  - {fileID: 1765231141}
+  - {fileID: 1190075861}
+  - {fileID: 1833253143}
+  - {fileID: 909260050}
+  - {fileID: 1283126125}
+  - {fileID: 2047484438}
   KUSIPosition:
   - {fileID: 430087042}
   - {fileID: 214449304}
