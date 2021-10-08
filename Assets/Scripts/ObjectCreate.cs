@@ -79,6 +79,7 @@ public class ObjectCreate : MonoBehaviour
             {
                 case "ANKO":
                     ankoCount++;
+                    //団子が4個以上になったらオブジェクトを消して空っぽの団子オブジェクトを入れる
                     if (ankoCount > 4)
                     {
                         Destroy(dangoObject);
