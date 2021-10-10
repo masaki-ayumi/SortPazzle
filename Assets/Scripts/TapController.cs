@@ -89,6 +89,10 @@ public class TapController : MonoBehaviour
         }
 
 
+        //ここで団子のタグの名前を判定してうまいこと団子を入れ替えられるようにしたい
+        //for文とif文とtagを使う？
+
+
         //親オブジェクトの一つ下の子オブジェクトを取得
         GameObject child = parent.transform.GetChild(0).gameObject;
 
