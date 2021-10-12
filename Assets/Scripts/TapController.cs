@@ -89,13 +89,21 @@ public class TapController : MonoBehaviour
         }
 
 
-        //ここで団子のタグの名前を判定してうまいこと団子を入れ替えられるようにしたい
-        //for文とif文とtagを使う？
 
 
         //親オブジェクトの一つ下の子オブジェクトを取得
         GameObject child = parent.transform.GetChild(0).gameObject;
 
+        //ここで団子のタグの名前を判定してうまいこと団子を入れ替えられるようにしたい
+        //for文とif文とtagを使う？
+        for(int i=0;i<4;i++)
+        {
+            //団子がEmptyでなければfor文を抜けるはず　間違い
+            if (child.gameObject.tag != "Empty")
+            {
+                return;
+            }
+        }
         //Debug.Log(child);        
         //子オブジェクトから孫オブジェクトを取得
         GameObject mago = child.transform.GetChild(0).gameObject;
@@ -103,6 +111,7 @@ public class TapController : MonoBehaviour
 
         //Debug.Log(tempObject1);
 
+        //magoオブジェクトをつかって団子の判定をする
 
     }
 
