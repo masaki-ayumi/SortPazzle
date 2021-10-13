@@ -58,6 +58,7 @@ public class ObjectCreate : MonoBehaviour
             //団子Prefab配列の添え字用変数
             int dangoRandom = Random.Range(0, 2);
 
+
             //団子Prefabをインスタンス化
             GameObject dangoObject = Instantiate(dangoPrefab[dangoRandom], parent[i].transform.position, Quaternion.identity, parent[i]);
 

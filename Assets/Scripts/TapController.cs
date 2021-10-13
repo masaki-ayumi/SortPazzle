@@ -7,7 +7,8 @@ public class TapController : MonoBehaviour
 
     private GameObject tempObject1;
     private GameObject tempObject2;
-
+    GameObject child = null;
+    GameObject mago = null;
     public float count;
 
     // Start is called before the first frame update
@@ -26,10 +27,6 @@ public class TapController : MonoBehaviour
         }
 
 
-        //TODO：一回目の🍡と二回目の🍡を入れ替える
-        //TODO：親オブジェクトを入れ替え
-        //TODO：座標を入れ替え
-
         //オブジェクトの中身があったら入れ替え実行
         if (tempObject1 != null && tempObject2 != null)
         {
@@ -45,12 +42,6 @@ public class TapController : MonoBehaviour
 
             tempObject2.transform.parent = temp;
             tempObject2.transform.position = Vtemp;
-
-
-
-
-            //Debug.Log("temp1=" + tempObject1);
-            //Debug.Log("temp2=" + tempObject2);
 
             //入れ替え用オブジェクトの中身をnull
             temp = null;
@@ -88,30 +79,23 @@ public class TapController : MonoBehaviour
             }
         }
 
-
-
-
-        //親オブジェクトの一つ下の子オブジェクトを取得
-        GameObject child = parent.transform.GetChild(0).gameObject;
-
-        //ここで団子のタグの名前を判定してうまいこと団子を入れ替えられるようにしたい
-        //for文とif文とtagを使う？
-        for(int i=0;i<4;i++)
+        //Emptyではない団子を上から調べる
+        for (int i = 0; i < 4; i++)
         {
-            //団子がEmptyでなければfor文を抜けるはず　間違い
-            if (child.gameObject.tag != "Empty")
+            //親オブジェクトの下の子オブジェクトを取得
+            child = parent.transform.GetChild(i).gameObject;
+
+            //子オブジェクトから孫オブジェクトを取得
+            mago = child.transform.GetChild(0).gameObject;
+            
+            //団子がEmptyでなければその団子を入れ替え変数に代入する
+            if (mago.gameObject.tag != "Empty")
             {
+                tempObject1 = mago;
                 return;
             }
+
         }
-        //Debug.Log(child);        
-        //子オブジェクトから孫オブジェクトを取得
-        GameObject mago = child.transform.GetChild(0).gameObject;
-        tempObject1 = mago;
-
-        //Debug.Log(tempObject1);
-
-        //magoオブジェクトをつかって団子の判定をする
 
     }
 
@@ -142,15 +126,27 @@ public class TapController : MonoBehaviour
             }
         }
 
-        //親オブジェクトの一つ下の子オブジェクトを取得
-        GameObject child = parent.transform.GetChild(0).gameObject;
+        //Emptyではない団子を上から調べる
+        for (int i = 0; i < 4; i++)
+        {
 
-        //Debug.Log(child);        
-        //子オブジェクトから孫オブジェクトを取得
-        GameObject mago = child.transform.GetChild(0).gameObject;
+            //親オブジェクトの下の子オブジェクトを取得
+            child = parent.transform.GetChild(i).gameObject;
 
-        tempObject2 = mago;
-        //Debug.Log(tempObject2);
+            //子オブジェクトから孫オブジェクトを取得
+            mago = child.transform.GetChild(0).gameObject;
+
+            //団子がEmptyでなければ一つ上のEmptyを入れ替え変数に代入する
+            if (mago.gameObject.tag != "Empty")
+            {
+                child = parent.transform.GetChild(i-1).gameObject;
+                mago = child.transform.GetChild(0).gameObject;
+                tempObject2 = mago;
+                return;
+            }
+
+        }
+
     }
 
 
