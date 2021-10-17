@@ -87,14 +87,16 @@ public class TapController : MonoBehaviour
 
             //子オブジェクトから孫オブジェクトを取得
             mago = child.transform.GetChild(0).gameObject;
-            
+            //Vector2 tempPos = mago.transform.position;
+            //mago.transform.position = new Vector2(tempPos.x, 3.0f);
+            //Debug.Log(mago.transform.position);
             //団子がEmptyでなければその団子を入れ替え変数に代入する
             if (mago.gameObject.tag != "Empty")
             {
                 tempObject1 = mago;
                 return;
             }
-
+            //mago.transform.position = tempPos;
         }
 
     }
@@ -126,10 +128,11 @@ public class TapController : MonoBehaviour
             }
         }
 
+
+        int emptyCount = 0;
         //Emptyではない団子を上から調べる
         for (int i = 0; i < 4; i++)
         {
-
             //親オブジェクトの下の子オブジェクトを取得
             child = parent.transform.GetChild(i).gameObject;
 
@@ -139,15 +142,24 @@ public class TapController : MonoBehaviour
             //団子がEmptyでなければ一つ上のEmptyを入れ替え変数に代入する
             if (mago.gameObject.tag != "Empty")
             {
-                child = parent.transform.GetChild(i-1).gameObject;
+                child = parent.transform.GetChild(i - 1).gameObject;
                 mago = child.transform.GetChild(0).gameObject;
                 tempObject2 = mago;
                 return;
             }
+            else
+            {
+                //空の団子の個数を数える
+                emptyCount++;
+            }
 
+            //もし串に団子が刺さっていなかったら一番下のEmptyを入れ替え変数に代入する
+            if (emptyCount == 4 && mago.gameObject.tag == "Empty")
+            {
+                mago = child.transform.GetChild(0).gameObject;
+                tempObject2 = mago;
+                return;
+            }
         }
-
     }
-
-
 }

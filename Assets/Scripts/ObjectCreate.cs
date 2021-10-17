@@ -68,12 +68,7 @@ public class ObjectCreate : MonoBehaviour
 
             //tagをつかって生成された団子をカウントする
 
-            //if (dangoObject.tag == dangoPrefab[dangoRandom].tag)
-            //{
-            //    count++;
-            //    //Destroy(dangoObject);
-            //    //dangoObject = Instantiate(dangoPrefab[4], parent[i].transform.position, Quaternion.identity, parent[i]);
-            //}
+           
 
             //switch文でtagを使って各団子をカウント
             switch (dangoObject.tag)
@@ -109,10 +104,10 @@ public class ObjectCreate : MonoBehaviour
 
             }
 
-            GameObject temp = dangoObject;
-            Debug.Log(dangoObject);
-            Debug.Log(ankoCount);
-            Debug.Log(gomaCount);
+            //GameObject temp = dangoObject;
+            //Debug.Log(dangoObject);
+            //Debug.Log(ankoCount);
+            //Debug.Log(gomaCount);
         }
     }
 
