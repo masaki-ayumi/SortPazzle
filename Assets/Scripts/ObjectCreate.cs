@@ -9,9 +9,19 @@ public class ObjectCreate : MonoBehaviour
     public GameObject[] dangoPosition;  //団子の座標になる空オブジェクトをアタッチ
     public GameObject[] KUSIPosition;  //串の座標になる空オブジェクトをアタッチ
 
-    int ankoCount = 0;
-    int gomaCount = 0;
-    int emptyCount = 0;
+    //表示している団子の種類ごとに個数をカウントするための変数
+    private struct Count
+    {
+        public int anko;
+        public int goma;
+        public int kinako;
+        public int mitarasi;
+        public int siratama;
+        public int yomogi;
+        public int empty;
+    }
+    Count count;
+
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +60,17 @@ public class ObjectCreate : MonoBehaviour
         //親オブジェクト配列
         Transform[] parent = new Transform[12];
 
+        //二種類の団子をランダムで表示
+        int seedRand1 = Random.Range(0, 5);
+        int seedRand2 = Random.Range(0, 5);
+        if (seedRand1 == seedRand2 || seedRand2 == seedRand1)
+        {
+            seedRand2 = Random.Range(0, 5);
+        }
+        int[] rnd = new int[2];
+        rnd[0] = seedRand1;
+        rnd[1] = seedRand2;
+
         for (int i = 0; i < dangoPosition.Length; i++)
         {
             //団子用の座標オブジェクトを親オブジェクトにする
@@ -60,46 +81,76 @@ public class ObjectCreate : MonoBehaviour
 
 
             //団子Prefabをインスタンス化
-            GameObject dangoObject = Instantiate(dangoPrefab[dangoRandom], parent[i].transform.position, Quaternion.identity, parent[i]);
+            GameObject dangoObject = Instantiate(dangoPrefab[rnd[dangoRandom]], parent[i].transform.position, Quaternion.identity, parent[i]);
 
-
-            /*TODO:生成される団子prefabを制限する
-                   一種類につき四つまでに制限*/
-
-            //tagをつかって生成された団子をカウントする
 
            
-
             //switch文でtagを使って各団子をカウント
             switch (dangoObject.tag)
             {
                 case "ANKO":
-                    ankoCount++;
+                    count.anko++;
                     //団子が4個以上になったらオブジェクトを消して空っぽの団子オブジェクトを入れる
-                    if (ankoCount > 4)
+                    if (count.anko > 4)
                     {
                         Destroy(dangoObject);
                         dangoObject = Instantiate(dangoPrefab[6], parent[i].transform.position, Quaternion.identity, parent[i]);
+                        count.empty++;
                     }
                     break;
                 case "GOMA":
-                    gomaCount++;
-                    if (gomaCount > 4)
+                    count.goma++;
+                    if (count.goma > 4)
                     {
                         Destroy(dangoObject);
                         dangoObject = Instantiate(dangoPrefab[6], parent[i].transform.position, Quaternion.identity, parent[i]);
+                        count.empty++;
                     }
                     break;
                 case "KINAKO":
+                    count.kinako++;
+                    if (count.kinako > 4)
+                    {
+                        Destroy(dangoObject);
+                        dangoObject = Instantiate(dangoPrefab[6], parent[i].transform.position, Quaternion.identity, parent[i]);
+                        count.empty++;
+                    }
                     break;
                 case "MITARASI":
+                    count.mitarasi++;
+                    if (count.mitarasi > 4)
+                    {
+                        Destroy(dangoObject);
+                        dangoObject = Instantiate(dangoPrefab[6], parent[i].transform.position, Quaternion.identity, parent[i]);
+                        count.empty++;
+                    }
                     break;
-                case "SIROTAMA":
+                case "SIRATAMA":
+                    count.siratama++;
+                    if (count.siratama > 4)
+                    {
+                        Destroy(dangoObject);
+                        dangoObject = Instantiate(dangoPrefab[6], parent[i].transform.position, Quaternion.identity, parent[i]);
+                        count.empty++;
+                    }
                     break;
                 case "YOMOGI":
+                    count.yomogi++;
+                    if (count.yomogi > 4)
+                    {
+                        Destroy(dangoObject);
+                        dangoObject = Instantiate(dangoPrefab[6], parent[i].transform.position, Quaternion.identity, parent[i]);
+                        count.empty++;
+                    }
                     break;
                 case "Empty":
-                    emptyCount++;
+                    count.empty++;
+                    if (count.empty > 4)
+                    {
+                        Destroy(dangoObject);
+                        dangoRandom = Random.Range(0, 2);
+                        dangoObject = Instantiate(dangoPrefab[rnd[dangoRandom]], parent[i].transform.position, Quaternion.identity, parent[i]);
+                    }
                     break;
 
             }
