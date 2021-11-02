@@ -11,10 +11,16 @@ public class TapController : MonoBehaviour
     GameObject mago = null;
     public float count;
 
+    Clear clearScript;
+    public GameObject clearscriptObject;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
         count = 0;
+        clearScript = clearscriptObject.GetComponent<Clear>();
     }
 
     // Update is called once per frame
@@ -47,6 +53,9 @@ public class TapController : MonoBehaviour
             temp = null;
             tempObject1 = null;
             tempObject2 = null;
+
+            //団子が揃っているか判断
+           clearScript.isComplete();
         }
 
 
@@ -87,16 +96,12 @@ public class TapController : MonoBehaviour
 
             //子オブジェクトから孫オブジェクトを取得
             mago = child.transform.GetChild(0).gameObject;
-            //Vector2 tempPos = mago.transform.position;
-            //mago.transform.position = new Vector2(tempPos.x, 3.0f);
-            //Debug.Log(mago.transform.position);
             //団子がEmptyでなければその団子を入れ替え変数に代入する
             if (mago.gameObject.tag != "Empty")
             {
                 tempObject1 = mago;
                 return;
             }
-            //mago.transform.position = tempPos;
         }
 
     }
@@ -140,7 +145,7 @@ public class TapController : MonoBehaviour
             mago = child.transform.GetChild(0).gameObject;
 
             //団子がEmptyでなければ一つ上のEmptyを入れ替え変数に代入する
-            if (mago.gameObject.tag != "Empty")
+            if (mago.gameObject.tag != "Empty" && mago.gameObject != tempObject1)
             {
                 child = parent.transform.GetChild(i - 1).gameObject;
                 mago = child.transform.GetChild(0).gameObject;
@@ -162,4 +167,15 @@ public class TapController : MonoBehaviour
             }
         }
     }
+
+    
+
+
+
+
+
+
+
+
+
 }

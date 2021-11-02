@@ -10,7 +10,7 @@ public class ObjectCreate : MonoBehaviour
     public GameObject[] KUSIPosition;  //串の座標になる空オブジェクトをアタッチ
 
     //表示している団子の種類ごとに個数をカウントするための変数
-    private struct Count
+    public struct Count
     {
         public int anko;
         public int goma;
@@ -20,7 +20,7 @@ public class ObjectCreate : MonoBehaviour
         public int yomogi;
         public int empty;
     }
-    Count count;
+    public Count count;
 
 
     // Start is called before the first frame update
@@ -61,11 +61,15 @@ public class ObjectCreate : MonoBehaviour
         Transform[] parent = new Transform[12];
 
         //二種類の団子をランダムで表示
-        int seedRand1 = Random.Range(0, 5);
-        int seedRand2 = Random.Range(0, 5);
-        if (seedRand1 == seedRand2 || seedRand2 == seedRand1)
+        int seedRand1 = Random.Range(0, 6);
+        int seedRand2 = Random.Range(0, 6);
+        //もし数がそろってしまったらばらけるまでループする
+        if (seedRand1 == seedRand2)
         {
-            seedRand2 = Random.Range(0, 5);
+            while (seedRand1 == seedRand2)
+            {
+                seedRand2 = Random.Range(0, 6);
+            }
         }
         int[] rnd = new int[2];
         rnd[0] = seedRand1;
@@ -83,7 +87,6 @@ public class ObjectCreate : MonoBehaviour
             //団子Prefabをインスタンス化
             GameObject dangoObject = Instantiate(dangoPrefab[rnd[dangoRandom]], parent[i].transform.position, Quaternion.identity, parent[i]);
 
-
            
             //switch文でtagを使って各団子をカウント
             switch (dangoObject.tag)
@@ -93,6 +96,7 @@ public class ObjectCreate : MonoBehaviour
                     //団子が4個以上になったらオブジェクトを消して空っぽの団子オブジェクトを入れる
                     if (count.anko > 4)
                     {
+                        count.anko--;
                         Destroy(dangoObject);
                         dangoObject = Instantiate(dangoPrefab[6], parent[i].transform.position, Quaternion.identity, parent[i]);
                         count.empty++;
@@ -102,6 +106,7 @@ public class ObjectCreate : MonoBehaviour
                     count.goma++;
                     if (count.goma > 4)
                     {
+                        count.goma--;
                         Destroy(dangoObject);
                         dangoObject = Instantiate(dangoPrefab[6], parent[i].transform.position, Quaternion.identity, parent[i]);
                         count.empty++;
@@ -111,6 +116,7 @@ public class ObjectCreate : MonoBehaviour
                     count.kinako++;
                     if (count.kinako > 4)
                     {
+                        count.kinako--;
                         Destroy(dangoObject);
                         dangoObject = Instantiate(dangoPrefab[6], parent[i].transform.position, Quaternion.identity, parent[i]);
                         count.empty++;
@@ -120,6 +126,7 @@ public class ObjectCreate : MonoBehaviour
                     count.mitarasi++;
                     if (count.mitarasi > 4)
                     {
+                        count.mitarasi--;
                         Destroy(dangoObject);
                         dangoObject = Instantiate(dangoPrefab[6], parent[i].transform.position, Quaternion.identity, parent[i]);
                         count.empty++;
@@ -129,6 +136,7 @@ public class ObjectCreate : MonoBehaviour
                     count.siratama++;
                     if (count.siratama > 4)
                     {
+                        count.siratama--;
                         Destroy(dangoObject);
                         dangoObject = Instantiate(dangoPrefab[6], parent[i].transform.position, Quaternion.identity, parent[i]);
                         count.empty++;
@@ -138,6 +146,7 @@ public class ObjectCreate : MonoBehaviour
                     count.yomogi++;
                     if (count.yomogi > 4)
                     {
+                        count.yomogi--;
                         Destroy(dangoObject);
                         dangoObject = Instantiate(dangoPrefab[6], parent[i].transform.position, Quaternion.identity, parent[i]);
                         count.empty++;
@@ -147,6 +156,7 @@ public class ObjectCreate : MonoBehaviour
                     count.empty++;
                     if (count.empty > 4)
                     {
+                        count.empty--;
                         Destroy(dangoObject);
                         dangoRandom = Random.Range(0, 2);
                         dangoObject = Instantiate(dangoPrefab[rnd[dangoRandom]], parent[i].transform.position, Quaternion.identity, parent[i]);
@@ -155,10 +165,7 @@ public class ObjectCreate : MonoBehaviour
 
             }
 
-            //GameObject temp = dangoObject;
-            //Debug.Log(dangoObject);
-            //Debug.Log(ankoCount);
-            //Debug.Log(gomaCount);
+            
         }
     }
 
